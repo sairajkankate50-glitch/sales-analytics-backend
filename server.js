@@ -16,6 +16,9 @@ app.use("/api/analytics", analyticsRoutes);
 app.get("/",(req,res)=>{
     res.send("api is running")
 })
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
 app.listen(process.env.PORT,()=>{
     console.log(`server is running on port ${process.env.PORT}`)
 })
